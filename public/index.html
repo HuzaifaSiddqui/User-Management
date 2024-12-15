@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="contact-list">
+            <header class="app-header">
+                <h1><i class="fas fa-users"></i> User Management System</h1>
+                <p class="subtitle">Manage your Users efficiently</p>
+            </header>
+            
+            <form id="user-form" class="user-form">
+                <div class="form-group">
+                    <input type="hidden" id="user-id">
+                    <div class="input-group">
+                        <i class="fas fa-user input-icon"></i>
+                        <input type="text" id="username" placeholder="Enter user name" required>
+                    </div>
+                    <button type="submit" id="submit-button">
+                        <i class="fas fa-plus"></i>
+                        <span>Add User</span>
+                    </button>
+                </div>
+            </form>
+
+            <div class="loading-spinner" id="loading">
+                <i class="fas fa-spinner fa-spin"></i>
+            </div>
+
+            <div id="user-list"></div> <!-- Add this line -->
+
+        </div>
+    </div>
+</body>
+</html>
